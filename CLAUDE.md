@@ -18,4 +18,9 @@ DukaanAI helps small shop owners create AI-assisted product listings and manage 
 
 ## Testing
 - Run relevant checks before committing changes.
-- Document setup commands in README.md.
+- Document setup commands in README.md.## Product Settings Rules
+- Keep product settings UI components in `frontend/src/components/` and validation logic in `frontend/src/validation/`.
+- Selling price must be greater than zero. If MRP is provided, it must not be lower than the selling price.
+- Stock must be a non-negative integer when inventory tracking is enabled. Invalid product data must never be saved.
+- Add or update tests for every validation rule. Run available test, build, and lint commands and report the actual results.
+

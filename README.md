@@ -1,44 +1,40 @@
 ﻿# DukaanAI
 
-DukaanAI is a project to help small shop owners create product listings and manage inventory with AI.
+DukaanAI helps small shop owners create product listings and manage inventory with AI.
 
-## Problem
-Small shop owners often manage product details and inventory manually.
+## What works today
 
-## Planned Features
-- Create product listings from product images
-- Generate product descriptions with AI
-- Manage product prices and stock
-- Search products and export inventory
+The React frontend includes a **product settings form**. Shop owners can enter name, category, prices, GST, stock, and listing details. The form validates input, shows a live preview, and saves settings in the browser with `localStorage`.
+
+AI listing generation, a product catalog, and the Express backend are **not built yet**.
 
 ## Planned Technology Stack
+
 - Frontend: React and Vite
 - Backend: Node.js and Express
 - AI: Ollama local model
 
-## Project Status
-This repository is in **early setup**. Right now it has documentation, a license, and project rules. There is **no app code yet**, so you cannot run DukaanAI as a website or API.
-
-The features and technology listed above are **planned**. They are not built yet.
-
 ## Getting Started
 
-You cannot start a local app yet because the frontend and backend have not been created.
-
-When development begins, you will likely need:
-
-- [Node.js](https://nodejs.org/) (LTS version) so you can run JavaScript tools
-- [Git](https://git-scm.com/) so you can copy this project to your computer
-- [Ollama](https://ollama.com/) if you want to use the planned local AI model
-
-To look at the project today:
+You need [Node.js](https://nodejs.org/) (LTS) installed.
 
 ```bash
 git clone https://github.com/nageshsargar60-boop/Dukaan_ai.git
-cd Dukaan_ai
+cd Dukaan_ai/frontend
+npm install
+npm run dev
 ```
 
-Then open `README.md` and `CLAUDE.md`. Do not run `npm install` or `npm run dev` yet — those commands will not work until the planned React and Node.js apps exist.
+Then open the local URL printed in the terminal (usually `http://localhost:5173`).
+
+Useful commands from `frontend/`:
+
+```bash
+npm run test    # validation checks
+npm run build   # production build
+npm run lint    # lint the frontend
+```
 
 ## License
+
 This project is under the MIT License. See the `LICENSE` file for details.
